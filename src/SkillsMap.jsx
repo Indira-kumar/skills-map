@@ -223,7 +223,7 @@ const ALL_EVIDENCE = ALL_SKILLS.flatMap(s => s.evidence.map((e, i) => ({ skillId
 const TOTAL_EVIDENCE = ALL_EVIDENCE.length;
 
 const VERSION = "1.0";
-const APP_NAME = "proofwork";
+const APP_NAME = "skillsmap";
 
 /* ═══════════════════════════════════════════
    UTILITY FUNCTIONS
@@ -267,16 +267,16 @@ function decompressFromUrl(str) {
 /* ═══════════════════════════════════════════
    MAIN APP
    ═══════════════════════════════════════════ */
-export default function ProofWork() {
+export default function SkillsMap() {
   const [checks, setChecks] = useState(() => {
-    try { const saved = localStorage.getItem("proofwork:checks"); return saved ? JSON.parse(saved) : {}; }
+    try { const saved = localStorage.getItem("skillsmap:checks"); return saved ? JSON.parse(saved) : {}; }
     catch { return {}; }
   });
   const [expanded, setExpanded] = useState({});
   const [view, setView] = useState("map");
   const [toast, setToast] = useState(null);
   const [notes, setNotes] = useState(() => {
-    try { return localStorage.getItem("proofwork:notes") || ""; }
+    try { return localStorage.getItem("skillsmap:notes") || ""; }
     catch { return ""; }
   });
   const [compareData, setCompareData] = useState(null);
@@ -288,11 +288,11 @@ export default function ProofWork() {
 
   // Auto-save to localStorage
   useEffect(() => {
-    try { localStorage.setItem("proofwork:checks", JSON.stringify(checks)); } catch {}
+    try { localStorage.setItem("skillsmap:checks", JSON.stringify(checks)); } catch {}
   }, [checks]);
 
   useEffect(() => {
-    try { localStorage.setItem("proofwork:notes", notes); } catch {}
+    try { localStorage.setItem("skillsmap:notes", notes); } catch {}
   }, [notes]);
 
   // Load from URL hash on mount (overrides localStorage)
@@ -362,10 +362,10 @@ export default function ProofWork() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `proofwork-${getMonthLabel()}.json`;
+    a.download = `skillsmap-${getMonthLabel()}.json`;
     a.click();
     URL.revokeObjectURL(url);
-    showToast(`Downloaded proofwork-${getMonthLabel()}.json`);
+    showToast(`Downloaded skillsmap-${getMonthLabel()}.json`);
   };
 
   /* ── Import ── */
@@ -428,7 +428,7 @@ export default function ProofWork() {
       setChecks({});
       setNotes("");
       setCompareData(null);
-      try { localStorage.removeItem("proofwork:checks"); localStorage.removeItem("proofwork:notes"); } catch {}
+      try { localStorage.removeItem("skillsmap:checks"); localStorage.removeItem("skillsmap:notes"); } catch {}
       showToast("All progress cleared");
     }
   };
@@ -495,7 +495,7 @@ export default function ProofWork() {
         <div style={{ marginBottom: 24 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
             <h1 style={{ fontSize: 24, fontWeight: 700, color: "#fff", letterSpacing: "-0.5px" }}>
-              proofwork
+              skillsmap
             </h1>
             <span style={{
               fontSize: 9, background: "#1a1a28", color: "#9a9aa8", padding: "2px 8px",
@@ -727,7 +727,7 @@ export default function ProofWork() {
           marginTop: 40, paddingTop: 20, borderTop: "1px solid #2a2a38",
           fontSize: 10, color: "#737380", textAlign: "center", lineHeight: 1.8,
         }}>
-          <strong style={{ color: "#8b8b99" }}>proofwork</strong> — don't rate yourself, prove it
+          <strong style={{ color: "#8b8b99" }}>skillsmap</strong> — don't rate yourself, prove it
           <br/>Export monthly as JSON → Compare snapshots → Track real growth
           <br/>Pure client-side. Your data never leaves your browser.
         </div>

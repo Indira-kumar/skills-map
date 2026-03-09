@@ -1,9 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import ProofWork from "./ProofWork";
+import SkillsMap from "./SkillsMap";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ProofWork />
+    <SkillsMap />
   </StrictMode>
 );
