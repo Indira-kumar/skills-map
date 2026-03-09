@@ -1,0 +1,396 @@
+[
+  {
+    "id": "think",
+    "label": "Think",
+    "icon": "◆",
+    "color": "#E8A040",
+    "desc": "Validate before you build. Strategy before tactics.",
+    "branches": [
+      {
+        "id": "validate",
+        "label": "Validation",
+        "skills": [
+          {
+            "id": "vl1",
+            "label": "Problem Discovery",
+            "evidence": [
+              "Interviewed 10+ potential users about their problems",
+              "Can articulate the problem in one sentence",
+              "Identified a gap competitors aren't filling"
+            ]
+          },
+          {
+            "id": "vl2",
+            "label": "Market Sizing",
+            "evidence": [
+              "Estimated TAM/SAM/SOM for an idea",
+              "Identified ideal customer profile (ICP)",
+              "Researched pricing benchmarks in my category"
+            ]
+          },
+          {
+            "id": "vl3",
+            "label": "MVP & Iteration",
+            "evidence": [
+              "Shipped an MVP and collected real user feedback",
+              "Pivoted or killed a feature based on data",
+              "Pre-sold a product before fully building it"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "strategy",
+        "label": "Strategy",
+        "skills": [
+          {
+            "id": "st1",
+            "label": "Pricing & Monetization",
+            "evidence": [
+              "Chosen a pricing model and can justify why",
+              "Tested different price points",
+              "Implemented upsells or expansion revenue"
+            ]
+          },
+          {
+            "id": "st2",
+            "label": "Metrics & Analytics",
+            "evidence": [
+              "Track MRR, churn, and LTV regularly",
+              "Set up product analytics (Mixpanel, PostHog, etc.)",
+              "Made a product decision based on data, not gut feel"
+            ]
+          },
+          {
+            "id": "st3",
+            "label": "Retention & Growth",
+            "evidence": [
+              "Designed an onboarding flow that improves activation",
+              "Run a churn analysis and acted on it",
+              "Built a feedback loop (surveys, interviews, NPS)"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "build",
+    "label": "Build",
+    "icon": "▲",
+    "color": "#818CF8",
+    "desc": "Ship fast, ship solid, iterate relentlessly.",
+    "branches": [
+      {
+        "id": "ui",
+        "label": "UI / Frontend",
+        "skills": [
+          {
+            "id": "ui1",
+            "label": "Design",
+            "evidence": [
+              "Designed a UI from scratch (not a template)",
+              "Built a responsive layout that works on mobile",
+              "Used a design tool (Figma, Sketch) for mockups",
+              "Implemented a component/design system"
+            ]
+          },
+          {
+            "id": "ui2",
+            "label": "Architecture",
+            "evidence": [
+              "Built a SPA with a frontend framework",
+              "Handled complex client-side state management",
+              "Implemented SSR or SSG for performance/SEO",
+              "Optimized a frontend for Core Web Vitals"
+            ]
+          },
+          {
+            "id": "ui3",
+            "label": "UX & Accessibility",
+            "evidence": [
+              "Conducted usability testing with real users",
+              "Implemented keyboard nav and screen reader support",
+              "Designed an onboarding flow that reduced drop-off"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "api",
+        "label": "API / Backend",
+        "skills": [
+          {
+            "id": "api1",
+            "label": "System Design",
+            "evidence": [
+              "Designed and built a REST or GraphQL API",
+              "Handled async processing (queues, workers, cron)",
+              "Designed a system handling 1000+ concurrent users",
+              "Integrated third-party APIs (payments, auth, email)"
+            ]
+          },
+          {
+            "id": "api2",
+            "label": "Schema / Data",
+            "evidence": [
+              "Designed a normalized database schema",
+              "Written and managed database migrations",
+              "Optimized slow queries with indexing",
+              "Worked with both SQL and NoSQL databases"
+            ]
+          },
+          {
+            "id": "api3",
+            "label": "Auth & Security",
+            "evidence": [
+              "Implemented authentication (OAuth, JWT, sessions)",
+              "Set up role-based access control",
+              "Handled input validation and injection prevention",
+              "Implemented rate limiting and CSRF protection"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "devops",
+        "label": "DevOps / Infra",
+        "skills": [
+          {
+            "id": "dev1",
+            "label": "Hosting & Deploy",
+            "evidence": [
+              "Deployed an app to a cloud provider",
+              "Configured custom domain with SSL",
+              "Used containers (Docker) in production",
+              "Set up a CDN for static assets"
+            ]
+          },
+          {
+            "id": "dev2",
+            "label": "Observability",
+            "evidence": [
+              "Set up structured application logging",
+              "Configured uptime monitoring and alerting",
+              "Debugged a production incident using logs/traces"
+            ]
+          },
+          {
+            "id": "dev3",
+            "label": "CI/CD & Testing",
+            "evidence": [
+              "Written automated tests (unit, integration, e2e)",
+              "Set up CI/CD pipeline with tests on every push",
+              "Used staging environments before prod deploys"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai",
+        "label": "AI & Automation",
+        "skills": [
+          {
+            "id": "ai1",
+            "label": "AI-Assisted Dev",
+            "evidence": [
+              "Regularly use AI tools to accelerate coding",
+              "Integrated an LLM/AI API into a product feature",
+              "Built an AI workflow that replaced manual work"
+            ]
+          },
+          {
+            "id": "ai2",
+            "label": "Automation",
+            "evidence": [
+              "Automated a repetitive task with scripts or tools",
+              "Built a data pipeline that runs unattended",
+              "Set up automated backups or maintenance tasks"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sell",
+    "label": "Sell",
+    "icon": "●",
+    "color": "#34D399",
+    "desc": "Get attention, build trust, convert strangers to customers.",
+    "branches": [
+      {
+        "id": "copy",
+        "label": "Copywriting",
+        "skills": [
+          {
+            "id": "cp1",
+            "label": "Cold Outreach",
+            "evidence": [
+              "Sent cold DMs/emails that got replies",
+              "A/B tested outreach and improved response rates",
+              "Booked a meeting or sale from cold outreach"
+            ]
+          },
+          {
+            "id": "cp2",
+            "label": "Email Marketing",
+            "evidence": [
+              "Set up an email list with a signup form",
+              "Written a drip/nurture sequence",
+              "Achieved >25% open rates consistently",
+              "Driven revenue directly from an email campaign"
+            ]
+          },
+          {
+            "id": "cp3",
+            "label": "Landing Pages",
+            "evidence": [
+              "Written a landing page with clear value prop",
+              "Optimized a page for conversion (CTA, social proof)",
+              "Achieved a >3% conversion rate on a landing page"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "seo",
+        "label": "SEO / AEO",
+        "skills": [
+          {
+            "id": "se1",
+            "label": "Content SEO",
+            "evidence": [
+              "Done keyword research and published optimized content",
+              "Ranked a page on the first page of Google",
+              "Built backlinks intentionally (guest posts, outreach)"
+            ]
+          },
+          {
+            "id": "se2",
+            "label": "Technical SEO",
+            "evidence": [
+              "Optimized site speed, structured data, meta tags",
+              "Submitted sitemap and managed Search Console",
+              "Fixed crawl errors and improved indexing"
+            ]
+          },
+          {
+            "id": "se3",
+            "label": "AI Engine Optimization",
+            "evidence": [
+              "Understand how LLMs surface recommendations",
+              "Optimized content to appear in AI-generated answers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "content",
+        "label": "Content & Social",
+        "skills": [
+          {
+            "id": "co1",
+            "label": "Short-Form Video",
+            "evidence": [
+              "Created and published Reels/TikToks/Shorts",
+              "Had a video get 10K+ views",
+              "Post short-form content on a consistent schedule"
+            ]
+          },
+          {
+            "id": "co2",
+            "label": "Long-Form Content",
+            "evidence": [
+              "Published blog posts, YouTube videos, or podcasts",
+              "Built a content backlog with consistent cadence",
+              "Repurposed one piece across multiple formats"
+            ]
+          },
+          {
+            "id": "co3",
+            "label": "Community",
+            "evidence": [
+              "Built or manage a community (Discord, Slack, forum)",
+              "Have an engaged audience that responds to content",
+              "Turned community members into customers"
+            ]
+          },
+          {
+            "id": "co4",
+            "label": "Collabs & Partnerships",
+            "evidence": [
+              "Done a collab (guest post, joint live, podcast swap)",
+              "Built a referral or affiliate partnership"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "paid",
+        "label": "Paid Distribution",
+        "skills": [
+          {
+            "id": "pd1",
+            "label": "Paid Ads",
+            "evidence": [
+              "Run a paid ad campaign (Google, Meta, etc.)",
+              "Achieved a positive ROAS on a campaign",
+              "Set up retargeting for website visitors"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sustain",
+    "label": "Sustain",
+    "icon": "■",
+    "color": "#FB7185",
+    "desc": "The unglamorous stuff that keeps you alive and sane.",
+    "branches": [
+      {
+        "id": "ops",
+        "label": "Ops & Legal",
+        "skills": [
+          {
+            "id": "op1",
+            "label": "Business Foundations",
+            "evidence": [
+              "Registered a business entity",
+              "Handle taxes or have a CPA",
+              "Have Terms of Service and Privacy Policy live",
+              "Track expenses and revenue in a bookkeeping system"
+            ]
+          },
+          {
+            "id": "op2",
+            "label": "Customer Support",
+            "evidence": [
+              "Have a system for handling support requests",
+              "Written help docs or a knowledge base",
+              "Respond to support within 24 hours consistently"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "self",
+        "label": "Personal",
+        "skills": [
+          {
+            "id": "ps1",
+            "label": "Sustainability",
+            "evidence": [
+              "Have a weekly routine that protects deep work time",
+              "Take regular breaks with boundaries around work hours",
+              "Have a personal revenue target I'm working toward",
+              "Know which tasks to outsource vs. do myself"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
