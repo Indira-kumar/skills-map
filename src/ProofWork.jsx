@@ -498,11 +498,11 @@ export default function ProofWork() {
               proofwork
             </h1>
             <span style={{
-              fontSize: 9, background: "#1a1a28", color: "#555", padding: "2px 8px",
+              fontSize: 9, background: "#1a1a28", color: "#9a9aa8", padding: "2px 8px",
               borderRadius: 3, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 600,
             }}>v{VERSION}</span>
           </div>
-          <p style={{ fontSize: 11, color: "#555", marginTop: 6, lineHeight: 1.6 }}>
+          <p style={{ fontSize: 11, color: "#9a9aa8", marginTop: 6, lineHeight: 1.6 }}>
             Evidence-based skill tracker for solopreneurs. Don't rate yourself — prove it.
             <br/>Export snapshots monthly. Compare over time. Share your proof.
           </p>
@@ -518,10 +518,10 @@ export default function ProofWork() {
           <ToolBtn label="↑ Load" onClick={() => fileRef.current?.click()} accent="#10B981" />
           <ToolBtn label="⇄ Compare" onClick={() => compareRef.current?.click()} accent="#E2A735" />
           <ToolBtn label="⎘ Share URL" onClick={handleShare} accent="#A855F7" />
-          <ToolBtn label="✎ Notes" onClick={() => setShowNotes(!showNotes)} accent={showNotes ? "#fff" : "#666"} />
+          <ToolBtn label="✎ Notes" onClick={() => setShowNotes(!showNotes)} accent={showNotes ? "#fff" : "#9a9aa8"} />
           <div style={{ flex: 1 }} />
-          <ToolBtn label="expand all" onClick={expandAll} accent="#555" subtle />
-          <ToolBtn label="collapse" onClick={collapseAll} accent="#555" subtle />
+          <ToolBtn label="expand all" onClick={expandAll} accent="#9a9aa8" subtle />
+          <ToolBtn label="collapse" onClick={collapseAll} accent="#9a9aa8" subtle />
           <ToolBtn label="reset" onClick={handleReset} accent="#EF4444" subtle />
           <input ref={fileRef} type="file" accept=".json" onChange={handleImport} />
           <input ref={compareRef} type="file" accept=".json" onChange={handleCompare} />
@@ -550,7 +550,7 @@ export default function ProofWork() {
             border: "1px solid #A855F733", borderRadius: 6, fontSize: 11,
             wordBreak: "break-all", color: "#A855F7", lineHeight: 1.5,
           }}>
-            <span style={{ color: "#666" }}>Share link: </span>{shareUrl}
+            <span style={{ color: "#9a9aa8" }}>Share link: </span>{shareUrl}
           </div>
         )}
 
@@ -576,7 +576,7 @@ export default function ProofWork() {
           ].map(t => (
             <button key={t.key} onClick={() => setView(t.key)} style={{
               background: view === t.key ? "#16162a" : "transparent",
-              color: view === t.key ? "#fff" : "#444",
+              color: view === t.key ? "#fff" : "#8b8b99",
               border: `1px solid ${view === t.key ? "#2a2a44" : "transparent"}`,
               borderRadius: 5, padding: "5px 14px", fontSize: 11, cursor: "pointer",
               textTransform: "uppercase", letterSpacing: 1, fontFamily: "inherit",
@@ -597,7 +597,7 @@ export default function ProofWork() {
         {/* ═══ GAPS VIEW ═══ */}
         {view === "gaps" && (
           <div className="anim">
-            <p style={{ fontSize: 12, color: "#666", marginBottom: 16, lineHeight: 1.6 }}>
+            <p style={{ fontSize: 12, color: "#9a9aa8", marginBottom: 16, lineHeight: 1.6 }}>
               Skills with less than 50% evidence. This is your growth roadmap — focus here.
             </p>
             {gaps.length === 0 ? (
@@ -608,10 +608,10 @@ export default function ProofWork() {
                 <div key={s.id} style={{
                   display: "flex", alignItems: "center", gap: 10,
                   padding: "10px 14px", background: "#0a0a12",
-                  border: `1px solid ${i === 0 ? "#2a1515" : "#14141e"}`,
+                  border: `1px solid ${i === 0 ? "#2a1515" : "#1e1e2e"}`,
                   borderRadius: 6, marginBottom: 4,
                 }}>
-                  <span style={{ fontSize: 10, color: "#333", fontWeight: 700, minWidth: 22 }}>
+                  <span style={{ fontSize: 10, color: "#737380", fontWeight: 700, minWidth: 22 }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span style={{ fontSize: 13, color: "#ccc", flex: 1 }}>{s.label}</span>
@@ -647,7 +647,7 @@ export default function ProofWork() {
               ✦ Newly proven since {compareLabel}
             </h3>
             {compareDiffs.gained.length === 0 ? (
-              <p style={{ fontSize: 12, color: "#444", marginBottom: 20 }}>No new evidence added.</p>
+              <p style={{ fontSize: 12, color: "#8b8b99", marginBottom: 20 }}>No new evidence added.</p>
             ) : (
               <div style={{ marginBottom: 20 }}>
                 {compareDiffs.gained.map(key => {
@@ -658,7 +658,7 @@ export default function ProofWork() {
                       padding: "6px 12px", fontSize: 12, color: "#10B981",
                       borderLeft: "2px solid #10B98144", marginBottom: 2, marginLeft: 8,
                     }}>
-                      <span style={{ color: "#555" }}>{skill?.label}: </span>
+                      <span style={{ color: "#9a9aa8" }}>{skill?.label}: </span>
                       {skill?.evidence[Number(idx)]}
                     </div>
                   );
@@ -680,7 +680,7 @@ export default function ProofWork() {
                         padding: "6px 12px", fontSize: 12, color: "#EF4444",
                         borderLeft: "2px solid #EF444444", marginBottom: 2, marginLeft: 8,
                       }}>
-                        <span style={{ color: "#555" }}>{skill?.label}: </span>
+                        <span style={{ color: "#9a9aa8" }}>{skill?.label}: </span>
                         {skill?.evidence[Number(idx)]}
                       </div>
                     );
@@ -707,12 +707,12 @@ export default function ProofWork() {
                 }}>
                   <span style={{ color: pillar.color, fontSize: 14 }}>{pillar.icon}</span>
                   <span style={{ fontSize: 13, color: "#bbb", flex: 1 }}>{pillar.label}</span>
-                  <span style={{ fontSize: 11, color: "#555" }}>{oldPct}%</span>
-                  <span style={{ fontSize: 11, color: "#555" }}>→</span>
+                  <span style={{ fontSize: 11, color: "#9a9aa8" }}>{oldPct}%</span>
+                  <span style={{ fontSize: 11, color: "#9a9aa8" }}>→</span>
                   <span style={{ fontSize: 13, fontWeight: 600, color: pillar.color }}>{nowPct}%</span>
                   <span style={{
                     fontSize: 12, fontWeight: 700, minWidth: 40, textAlign: "right",
-                    color: diff > 0 ? "#10B981" : diff < 0 ? "#EF4444" : "#444",
+                    color: diff > 0 ? "#10B981" : diff < 0 ? "#EF4444" : "#8b8b99",
                   }}>
                     {diff > 0 ? `+${diff}` : diff}%
                   </span>
@@ -724,10 +724,10 @@ export default function ProofWork() {
 
         {/* ─── FOOTER ─── */}
         <div style={{
-          marginTop: 40, paddingTop: 20, borderTop: "1px solid #111",
-          fontSize: 10, color: "#333", textAlign: "center", lineHeight: 1.8,
+          marginTop: 40, paddingTop: 20, borderTop: "1px solid #2a2a38",
+          fontSize: 10, color: "#737380", textAlign: "center", lineHeight: 1.8,
         }}>
-          <strong style={{ color: "#444" }}>proofwork</strong> — don't rate yourself, prove it
+          <strong style={{ color: "#8b8b99" }}>proofwork</strong> — don't rate yourself, prove it
           <br/>Export monthly as JSON → Compare snapshots → Track real growth
           <br/>Pure client-side. Your data never leaves your browser.
         </div>
@@ -761,18 +761,18 @@ function StatCard({ label, val, sub, color, big, icon }) {
       background: "#0a0a12", border: "1px solid #14141e", borderRadius: 7,
       padding: big ? "12px 16px" : "10px 14px",
     }}>
-      <div style={{ fontSize: 10, color: "#444", textTransform: "uppercase", letterSpacing: 1.2, display: "flex", alignItems: "center", gap: 4 }}>
+      <div style={{ fontSize: 10, color: "#8b8b99", textTransform: "uppercase", letterSpacing: 1.2, display: "flex", alignItems: "center", gap: 4 }}>
         {icon && <span style={{ color, fontSize: 10 }}>{icon}</span>}{label}
       </div>
       <div style={{ fontSize: big ? 22 : 18, fontWeight: 700, color, marginTop: 3 }}>{val}</div>
-      {sub && <div style={{ fontSize: 10, color: "#333", marginTop: 2 }}>{sub}</div>}
+      {sub && <div style={{ fontSize: 10, color: "#737380", marginTop: 2 }}>{sub}</div>}
     </div>
   );
 }
 
 function MiniBar({ value, color, width = 48 }) {
   return (
-    <div style={{ width, height: 3, background: "#14141e", borderRadius: 2, overflow: "hidden" }}>
+    <div style={{ width, height: 3, background: "#1e1e2e", borderRadius: 2, overflow: "hidden" }}>
       <div style={{ width: `${value}%`, height: "100%", background: color, opacity: 0.7, borderRadius: 2, transition: "width 0.3s" }} />
     </div>
   );
@@ -783,7 +783,7 @@ function SkillDot({ pct, color }) {
     <div style={{
       width: 8, height: 8, borderRadius: "50%", flexShrink: 0,
       background: pct === 100 ? color : pct > 0 ? color + "44" : "#1a1a24",
-      border: `1.5px solid ${pct > 0 ? color + "88" : "#222"}`,
+      border: `1.5px solid ${pct > 0 ? color + "88" : "#3a3a48"}`,
     }} />
   );
 }
@@ -802,11 +802,11 @@ function PillarSection({ pillar, checks, expanded, toggle, toggleExpand, getSkil
             fontSize: 15, fontWeight: 700, color: pillar.color,
             textTransform: "uppercase", letterSpacing: 2,
           }}>{pillar.label}</span>
-          <span style={{ fontSize: 10, color: "#444", marginLeft: 10 }}>{pillar.desc}</span>
+          <span style={{ fontSize: 10, color: "#8b8b99", marginLeft: 10 }}>{pillar.desc}</span>
         </div>
         <span style={{
           fontSize: 20, fontWeight: 700,
-          color: pPct > 60 ? "#10B981" : pPct > 25 ? "#E2A735" : "#444",
+          color: pPct > 60 ? "#10B981" : pPct > 25 ? "#E2A735" : "#8b8b99",
         }}>{pPct}%</span>
       </div>
 
@@ -827,9 +827,9 @@ function PillarSection({ pillar, checks, expanded, toggle, toggleExpand, getSkil
               <MiniBar value={bPct} color={pillar.color} />
               <span style={{
                 fontSize: 11, fontWeight: 600, minWidth: 30, textAlign: "right",
-                color: bPct > 60 ? "#10B981" : bPct > 25 ? "#E2A735" : "#444",
+                color: bPct > 60 ? "#10B981" : bPct > 25 ? "#E2A735" : "#8b8b99",
               }}>{bPct}%</span>
-              <span style={{ color: "#333", fontSize: 11, transform: isOpen ? "rotate(90deg)" : "none", transition: "0.15s" }}>▸</span>
+              <span style={{ color: "#737380", fontSize: 11, transform: isOpen ? "rotate(90deg)" : "none", transition: "0.15s" }}>▸</span>
             </button>
 
             {isOpen && (
@@ -850,7 +850,7 @@ function PillarSection({ pillar, checks, expanded, toggle, toggleExpand, getSkil
                         <span style={{ fontSize: 12, color: isSkillOpen ? "#ddd" : "#999", flex: 1 }}>
                           {skill.label}
                         </span>
-                        <span style={{ fontSize: 10, color: "#333" }}>{done}/{skill.evidence.length}</span>
+                        <span style={{ fontSize: 10, color: "#737380" }}>{done}/{skill.evidence.length}</span>
                       </button>
                       {isSkillOpen && (
                         <div className="anim" style={{ padding: "2px 0 4px 26px" }}>
@@ -912,10 +912,10 @@ function RadarChart({ pillars, getBranchPct }) {
     <div style={{ display: "flex", justifyContent: "center", marginBottom: 20 }}>
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
         {[.2, .4, .6, .8, 1].map(r => (
-          <circle key={r} cx={cx} cy={cy} r={maxR * r} fill="none" stroke="#14141e" strokeWidth={0.5} />
+          <circle key={r} cx={cx} cy={cy} r={maxR * r} fill="none" stroke="#1e1e2e" strokeWidth={0.5} />
         ))}
         {pts.map((p, i) => (
-          <line key={i} x1={cx} y1={cy} x2={p.fx} y2={p.fy} stroke="#14141e" strokeWidth={0.5} />
+          <line key={i} x1={cx} y1={cy} x2={p.fx} y2={p.fy} stroke="#1e1e2e" strokeWidth={0.5} />
         ))}
         <path d={path} fill="rgba(59,130,246,0.06)" stroke="#3B82F6" strokeWidth={1.5} />
         {pts.map((p, i) => (
@@ -927,7 +927,7 @@ function RadarChart({ pillars, getBranchPct }) {
               {p.b.label}
             </text>
             <text x={p.lx} y={p.ly + 12} textAnchor="middle" dominantBaseline="middle"
-              fill="#444" fontSize={8} fontFamily="'IBM Plex Mono', monospace">
+              fill="#8b8b99" fontSize={8} fontFamily="'IBM Plex Mono', monospace">
               {getBranchPct(p.b)}%
             </text>
           </g>
