@@ -1,4 +1,4 @@
-# skillsmap
+<img width="805" height="491" alt="image" src="https://github.com/user-attachments/assets/3bfc2ba2-8b35-4bda-ae59-a1bb022875fe" /># skillsmap
 
 Evidence-based skill tracker for solopreneurs. Don't rate yourself, prove it.
 
@@ -28,27 +28,29 @@ Each pillar is broken down into branches, and each branch contains concrete **ev
 ### Dashboard
 
 <!-- Replace with your own screenshot -->
-![Dashboard](screenshots/dashboard.png)
+<img width="820" height="699" alt="image" src="https://github.com/user-attachments/assets/5bf40275-6d39-4f7f-a676-16f41d5fa145" />
+
 
 ### Radar Chart
 
 <!-- Replace with your own screenshot -->
-![Radar Chart](screenshots/radar.png)
+<img width="459" height="428" alt="image" src="https://github.com/user-attachments/assets/2522e067-0715-4d3e-bac8-11b2f4660e0f" />
 
 ### Gaps View
 
 <!-- Replace with your own screenshot -->
-![Gaps View](screenshots/gaps.png)
+<img width="805" height="491" alt="image" src="https://github.com/user-attachments/assets/18a30df1-e15a-4a20-83b0-b65e0c05e1d3" />
 
 ### Results
 
 <!-- Replace with your own screenshot -->
-![Results](screenshots/results.png)
+<img width="807" height="652" alt="image" src="https://github.com/user-attachments/assets/6847b6fc-a338-4da3-83a0-e1f57b80dcd9" />
 
 ### Snapshot Comparison
 
 <!-- Replace with your own screenshot -->
-![Snapshot Comparison](screenshots/comparison.png)
+<img width="710" height="693" alt="image" src="https://github.com/user-attachments/assets/204d4694-f3e3-4b58-80d5-90db458a6000" />
+
 
 ---
 
