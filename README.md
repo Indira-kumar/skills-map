@@ -1,4 +1,4 @@
-<img width="805" height="491" alt="image" src="https://github.com/user-attachments/assets/3bfc2ba2-8b35-4bda-ae59-a1bb022875fe" /># skillsmap
+# skillsmap
 
 Evidence-based skill tracker for solopreneurs. Don't rate yourself, prove it.
 
